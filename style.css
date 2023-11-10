@@ -314,7 +314,7 @@ a.btn.lrn-btn{
   .menu-items{
     padding-top: 150px;
     background: #E0B448;
-    height: 30vh;
+    height: 39vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -423,7 +423,7 @@ a.btn.lrn-btn{
 @media (width < 600px){
 
   .menu-items li {
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 .menu-items li a{
   padding: 0.3rem;

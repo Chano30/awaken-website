@@ -110,9 +110,9 @@ section.menu{
   font-family: 'Akaya Telivigala';
 }
 .menu-gallery .container{
-  padding-top: 2em;
+  padding: 2em;
   height: auto !important;
-  min-height: 55vh;
+  min-height: 0;
 }
 
 .menu-gallery .wrapper{

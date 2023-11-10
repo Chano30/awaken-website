@@ -91,7 +91,8 @@ section.mission{
   font-size: clamp(1rem, 2vw, 2rem);
 }
 
-@media (width < 600px){
+/* Revised */
+@media (width < 768px){
   .mission-vision .row{
     grid-template-columns: 1fr;
   }
