@@ -37,7 +37,7 @@ section.contact-area{
 
 .keep-touch{
   background-color: #D9D9D9;
-  padding: 1em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
 }
@@ -73,6 +73,11 @@ section.contact-area{
   font-weight: 600;
 }
 
+form{
+  margin-top: 1em;
+}
+
+input[type=number],input[type=email],
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
