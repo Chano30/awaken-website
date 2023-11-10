@@ -1,0 +1,114 @@
+.hero-menu{
+  width: 100%;
+  height: 100vh;
+  background: url(/image/menu-bg.png);
+  background-repeat:no-repeat ;
+  background-size: cover;
+  background-position: center center;
+}
+
+.content{
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: absolute;
+  width: 100%;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.content h1{
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: 2em;
+}
+.content h1 span{
+  display: block;
+  text-align: center;
+}
+
+section.contact-area{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.keep-touch{
+  background-color: #D9D9D9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.keep-touch .rows{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr) 160px;
+  row-gap: 2em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.keep-touch .rows .row{
+  display: grid;
+  grid-template-columns: 2.6em 1fr;
+  min-height: 115px;
+  column-gap: 1em;
+
+}
+.keep-touch .rows .row i{
+  font-size: 2rem;
+}
+.keep-touch .rows .row a{
+  text-decoration: none;
+  color: black;
+}
+.business-hour{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+.business-hour h3{
+  font-weight: 600;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+
+.message-wrapper{
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+}
+
+.message-form {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 2em;
+}
+
+.maps{
+  width: 100%;
+  height: auto;
+  margin-top: 2em;
+}
+
+@media (width < 600px) {
+  section.contact-area{
+    grid-template-columns: 1fr;
+  }
+  .keep-touch .rows{
+    margin: 0;
+  }
+}
