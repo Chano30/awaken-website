@@ -55,6 +55,7 @@ section.mission{
   background-color:#D9D9D9 ;
 }
 .mission-wrapper{
+  min-height: 450px;
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -73,7 +74,7 @@ section.mission{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
-  font-size: clamp(15px, 1.5vw, 2rem);
+  /* font-size: clamp(15px, 1.5vw, 2rem); */
   font-size: 100%;
   gap: 1em;
   padding: 0 2em;
