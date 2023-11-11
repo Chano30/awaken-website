@@ -92,7 +92,7 @@ section.mission{
 }
 
 /* Revised */
-@media (width < 768px){
+@media (width < 900px){
   .mission-vision .row{
     grid-template-columns: 1fr;
   }
