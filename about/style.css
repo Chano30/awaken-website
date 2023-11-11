@@ -66,14 +66,14 @@ section.mission{
   margin-bottom: 1em;
 }
 .mission-vision img{
-  max-width: 650px;
+
   width: 100%;
 }
 .mission-vision .row{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   place-items: center;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.8rem, 0.5vw + 1rem, 2rem);
   gap: 1em;
   padding: 0 2em;
 }
@@ -92,11 +92,11 @@ section.mission{
 }
 
 /* Revised */
-@media (width > 900px){
+@media (width < 900px){
   .mission-vision .row{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   .vission--text{
-    text-align: left;
+    text-align: left !important;
   }
 }
