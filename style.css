@@ -20,6 +20,7 @@
 
 html{
   overflow: auto;
+  scroll-behavior: smooth;
 }
 
 *{
@@ -69,7 +70,7 @@ header{
 
 .nav-links .nav-link{
   margin-right: 20px;
-  font-size: 1rem;
+  font-size: 15px;
   text-decoration: none;
 }
 
@@ -117,7 +118,7 @@ header{
 
 .logo a img{
   max-width: 350px;
-  max-height: 170px;
+  max-height: 120px;
 }
 
 .btn{
@@ -144,8 +145,8 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 628px;
-  height: clamp(39.25rem, 100vh, 100vh);
+  min-height: 681px;
+  height: clamp(628px, 100%, 1024px);
   background: linear-gradient(.25turn, var(--bg-lighten), var(--bg-med-light));
 }
 
@@ -165,18 +166,17 @@ header{
 
 .container{
   max-width: 1200px;
-  margin: 0 auto;
-  min-height: 65vh;
-  position: relative;
+  margin: 2em auto 0;
+  /* min-height: clamp( 385px, 40vh + 5rem, 700px); */
+  height: auto;
   width: 90%;
+
 }
 
 .header{
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: absolute;
   bottom: 0;
   row-gap: 1em;
   z-index: 666;
@@ -184,30 +184,29 @@ header{
 
 .header h1{
 
-  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-size: clamp(2rem, 6vw + 1rem, 4.5rem);
   color: #E0B448;
   -webkit-text-stroke-width: 1px;
   letter-spacing: 1px;
   line-height: 120%;
+
 }
 
 .header h3{
-  width: 80%;
-  font-size: clamp(1.5rem, 3.3vw, 3.3rem);
+  font-size: clamp(1rem, 2vw + 1rem, 3.2rem);
   line-height: 120%;
   font-weight: 300;
   color: #fff;
 }
 .header h3 span{
-
-  -webkit-text-stroke-width: 3px;
-  font-size: clamp(1.7rem, 3.5vw, 3.5rem);
+  -webkit-text-stroke-width: 2px;
+  font-size: clamp(1.5rem, 3vw + 1rem, 3.5rem);
   letter-spacing: 1.5px;
 }
 
 .header p{
-  width: 65%;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  width: 20em;
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
   color: #fff;
   letter-spacing: 1px;
 }
@@ -215,7 +214,7 @@ header{
 .dark-line{
   position: absolute;
   width: 100%;
-  min-height: 50%;
+  min-height: clamp(300px, 50vh + 2rem, 370px);
   background: rgb(50, 47, 47, 0.53);
   top: 50%;
   transform: translateY(-50%);
@@ -451,18 +450,18 @@ a.btn.lrn-btn{
     -webkit-text-stroke-width: 2px;
     font-size: 1.7rem;
   } */
-  .header p {
+  /* .header p {
     font-size: 1rem;
-  }
+  } */
   .logo a img{
     max-width: 200px;
     margin-left: -1em;
     margin-top: 2em;
   }
 
-  .dark-line{
+  /* .dark-line{
     min-height: 55%;
-  }
+  } */
 
   .hero{
     position: absolute;
@@ -615,7 +614,7 @@ section.about{
 
 section.product{
   width: 100%;
-  min-height: 70vh;
+  min-height: 87vh;
   background:#F2DEA8;
   margin-bottom: 2em;
 }

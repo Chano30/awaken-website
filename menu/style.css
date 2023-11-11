@@ -1,11 +1,11 @@
 
 .hero-menu{
   width: 100%;
-  height: 100vh;
+  min-height: clamp( 681px, 40vh + 5rem, 700px);
   background: url(/image/menu-bg.png);
   background-repeat:no-repeat ;
   background-size: cover;
-  background-position: center center;
+  background-position: bottom;
 }
 
 .content{
@@ -55,6 +55,10 @@ section.menu{
   font-family: 'Poppins';
   -webkit-text-stroke-width: 2px;
   letter-spacing: 2px;
+}
+
+.order-div a{
+  font-family: 'Akaya Telivigala';
 }
 
 .card--menu .price-btn a{
