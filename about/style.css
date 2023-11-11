@@ -66,8 +66,7 @@ section.mission{
   margin-bottom: 1em;
 }
 .mission-vision img{
-
-  width: 100%;
+  width:clamp(200px, 20vw + 10rem, 450px);
 }
 .mission-vision .row{
   display: grid;
@@ -95,8 +94,13 @@ section.mission{
 @media (width < 900px){
   .mission-vision .row{
     grid-template-columns: 1fr;
+    place-items: center;
   }
   .vission--text{
     text-align: left !important;
+  }
+  .vission--text,
+  .mission-text{
+    max-width: 380px;
   }
 }
