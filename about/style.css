@@ -71,7 +71,7 @@ section.mission{
 }
 .mission-vision .row{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   place-items: center;
   font-size: clamp(1rem, 2vw, 2rem);
   gap: 1em;
@@ -92,9 +92,9 @@ section.mission{
 }
 
 /* Revised */
-@media (width < 900px){
+@media (width > 900px){
   .mission-vision .row{
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .vission--text{
     text-align: left;
