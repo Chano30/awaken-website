@@ -238,6 +238,27 @@ a.btn.lrn-btn{
 
 }
 
+a.float{
+  position: fixed;
+  background-color: #000000;
+  width: 30px;
+  height: 30px;
+  bottom: 40px;
+  right: 40px; 
+  color: #fdfdfd;
+  border-radius:10px ;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  opacity: 0.7;
+  z-index: 999;
+}
+.my-float{
+  margin-top: 6px;
+}
+
+.hide-btn{
+  display: none;
+}
 @media (width < 900px){
   .menu-container{
     max-width: 1200px;
