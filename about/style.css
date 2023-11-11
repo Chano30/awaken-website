@@ -67,7 +67,7 @@ section.mission{
   margin-bottom: 1em;
 }
 .mission-vision img{
-  width:clamp(200px, 20vw + 10rem, 450px);
+  max-width: 100%;
 }
 .mission-vision .row{
   max-width: 1029px;
@@ -108,8 +108,5 @@ section.mission{
   .vission--text{
     text-align: left !important;
   }
-  .vission--text,
-  .mission-text{
-    max-width: 380px;
-  }
+
 }
